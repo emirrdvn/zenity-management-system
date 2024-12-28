@@ -1,4 +1,3 @@
-﻿# zenity-management-system
 # Zenity ile Gelişmiş Envanter Yönetim Sistemi
 
 ## Proje Açıklaması
