@@ -60,7 +60,7 @@ Bu proje, Zenity kullanarak bir envanter yönetim sistemi geliştirmek için haz
      ```
 2. **Proje Dosyalarını İndirin**:
    ```bash
-   git clone <proje-repository-url>
+   git clone https://github.com/emirrdvn/zenity-management-system
    cd <proje-dizini>
    ```
 3. **Çalıştırma İzni Verin**:
