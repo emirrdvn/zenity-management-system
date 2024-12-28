@@ -1,24 +1,47 @@
 # Zenity ile Gelişmiş Envanter Yönetim Sistemi
 
-## Proje Açıklaması
-Bu Bash tabanlı envanter yönetim sistemi, **Zenity** araçlarını kullanarak kullanıcı dostu bir grafik arayüz sağlar. Sistem, ürün yönetimi, kullanıcı yönetimi ve raporlama gibi temel özellikleri içerir. Kullanıcılar, envanterdeki ürünleri ekleyebilir, güncelleyebilir, silebilir ve raporlar oluşturabilir. Ayrıca, kullanıcı yönetimi sayesinde yeni kullanıcılar eklenebilir ve mevcut kullanıcılar üzerinde değişiklik yapılabilir.
+Bu proje, Zenity kullanarak bir envanter yönetim sistemi geliştirmek için hazırlanmıştır. Kullanıcı dostu bir arayüz ve kapsamlı işlevler sunarak envanter yönetimini kolaylaştırmayı amaçlar.
 
 ## Özellikler
-- **Kullanıcı Giriş ve Yetkilendirme**: Kullanıcıların rol bazlı erişim haklarıyla giriş yapması sağlanır.
-- **Ürün Yönetimi**:
-  - Ürün ekleme
-  - Ürün listeleme
-  - Ürün güncelleme
-  - Ürün silme
-- **Raporlama**:
-  - Stokta azalan ürünler
-  - En yüksek stok miktarına sahip ürünler
-- **Kullanıcı Yönetimi**:
-  - Yeni kullanıcı ekleme
-  - Kullanıcı güncelleme
-  - Kullanıcı silme
-  - Kullanıcıları listeleme
-- **Loglama**: Hata ve olay kayıtlarını `log.csv` dosyasına kaydeder.
+
+- Ürün ekleme, listeleme, güncelleme ve silme işlemleri
+- Kullanıcı yönetimi (ekleme, listeleme, güncelleme, silme)
+- Raporlama (stok analizi ve yüksek stoklu ürünler)
+- Kullanıcı doğrulama ve yetkilendirme (admin ve standart kullanıcı)
+- Hata kayıtları için log dosyası oluşturma
+
+## Gereksinimler
+
+- Bash kabuğu
+- Zenity (Linux sistemlerinde varsayılan olarak bulunur veya paket yöneticisi ile yüklenebilir)
+
+## Kullanım
+
+1. **Projenin Başlatılması:**
+    - Terminalden `bash <script_ismi>.sh` komutunu çalıştırın.
+2. **Kullanıcı Girişi:**
+    - Kullanıcı adınızı ve şifrenizi girerek giriş yapın.
+    - Giriş başarılıysa ana menüye yönlendirilirsiniz.
+3. **Ana Menü İşlevleri:**
+    - **Admin Rolü:** Ürün ve kullanıcı yönetimi dahil tüm işlemlere erişim.
+    - **Standart Kullanıcı:** Sadece ürün listeleme ve raporlama işlemlerine erişim.
+
+## Dosya Yapısı
+
+- `depo.csv`: Ürün bilgilerini saklar.
+- `kullanici.csv`: Kullanıcı bilgilerini saklar.
+- `log.csv`: Hata ve işlem loglarını saklar.
+
+## Örnek Komutlar
+
+- Yeni bir ürün eklemek için "Ürün Ekle" seçeneğini kullanın ve gerekli bilgileri Zenity formlarında doldurun.
+- Ürün güncellemek için ilgili ürün adını girerek yeni stok ve fiyat bilgilerini sağlayın.
+- Raporlama için sunulan seçeneklerden birini seçin (ör. "Stokta Azalan Ürünler").
+
+## YouTube Tanıtım Videosu
+
+[Proje Tanıtım Videosu](https://www.youtube.com/watch?v=dummy-link)
+
 
 ## Gereksinimler
 - **İşletim Sistemi**: Linux veya Unix tabanlı bir sistem
